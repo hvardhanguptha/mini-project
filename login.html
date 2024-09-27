@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - RideTogether</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body> 
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="logo2">RideTogether</h1>
+        <div id="login-container">
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" onclick="triggerBikeAnimation(event)">Login</button>
+            </form>
+            <p>Don't have an account? <a href="registration.html">Register</a></p>
+        </div>
+    </div>
+
+    <!-- Bike animation element -->
+    <div id="bike" class="bike">🚴</div>
+
+    <script src="login.js"></script>
+</body>
+</html>

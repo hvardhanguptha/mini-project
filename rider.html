@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rider - Liftly</title>
+    <link rel="stylesheet" href="rider.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Select Your College</h1>
+        <input type="text" id="collegeSearch" placeholder="Enter your college name">
+        <button id="searchButton">Search</button>
+    </div>
+
+    <!-- Matching Travellers Section -->
+    <div id="matchingTravellers" style="display: none;">
+        <h2>Matching Travellers</h2>
+        <ul id="travellerList"></ul>
+    </div>
+
+    <script src="rider.js"></script>
+</body>
+</html>

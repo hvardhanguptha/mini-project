@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home - RideTogether</title>
+<body>
+    <header>
+        <h1>Welcome to RideTogether!</h1>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="faq.html">FAQ</a>
+            <button onclick="logout()">Logout</button>
+            <button id="menu-btn" onclick="toggleMenu()">Menu</button>
+            <div id="menu-options" style="display: none;">
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <!-- Add more menu options here -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Select Your Role</h2>
+        <div class="role-buttons">
+            <div class="role-button" onclick="setRole('rider')">
+                <span>🚲</span>
+                <p>Rider</p>
+            </div>
+            <div class="role-button" onclick="setRole('traveller')">
+                <span>👥</span>
+                <p>Traveller</p>
+            </div>
+        </div>
+    </main>
+    <script src="home.js"></script>
+</body>
+</html>

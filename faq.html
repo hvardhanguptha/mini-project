@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Liftly</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="search" id="search-input" placeholder="Search FAQs">
+        <button id="search-btn">Search</button>
+    </div>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <h2 class="faq-question" onclick="toggleAnswer(this)">What is Liftly?</h2>
+            <p class="faq-answer">Liftly is a ride-sharing platform that connects riders and clients within a city.</p>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question" onclick="toggleAnswer(this)">How do I register?</h2>
+            <p class="faq-answer">You can register by providing your details in the registration form.</p>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question" onclick="toggleAnswer(this)">How does the ride-sharing work?</h2>
+            <p class="faq-answer">Once registered, users can select their roles and request rides or offer rides based on availability.</p>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question" onclick="toggleAnswer(this)">Is there a fee for using Liftly?</h2>
+            <p class="faq-answer">Liftly operates on a cost-sharing model; users can split the ride costs.</p>
+        </div>
+    </div>
+
+    <script src="faq.js"></script>
+</body>
+</html>
